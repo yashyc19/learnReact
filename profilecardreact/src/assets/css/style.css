@@ -1,0 +1,115 @@
+:root {
+    --cardBg: #19181E;
+    --cardFooterBg: #100F12;
+    --linksColor: #4483DA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212126;
+    color: whitesmoke;
+    padding: 50px 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--linksColor);
+}
+
+.card{
+    width: 500px;
+    background-color: var(--cardBg);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info > div{
+    margin-bottom: 15px;
+}
+
+.info--image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info--title {
+    color: #BC5E22;
+}
+
+.info--contact {
+    margin: 30px auto;
+    width: 50%;
+    height: 50px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: #212126;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.info--contact:hover {
+    background-color: #4483DA;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.info--hr {
+    width: 80%;
+    height: 1px;
+    margin: 0 auto 50px;
+}
+
+.about, .interests {
+    width: 80%;
+    height: auto;
+    margin: auto auto 50px;
+    text-align: left;
+}
+
+.about--title, .interests--title {
+    color: #BC5E22;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.about--content, .interests--content {
+    color: whitesmoke;
+    line-height: 1.5;
+}
+
+.contact {
+    width: 100%;
+    height: 50px;
+    padding: 0 20%;
+    background-color: var(--cardFooterBg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: bolder;
+    color: gray;
+}
+
+.contact > div {
+    cursor: pointer;
+}
