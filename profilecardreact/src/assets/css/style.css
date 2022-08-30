@@ -52,8 +52,15 @@ a {
 }
 
 .info--contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info--contact > div {
     margin: 30px auto;
-    width: 50%;
+    width: 40%;
     height: 50px;
     background-color: whitesmoke;
     border-radius: 10px;
@@ -66,10 +73,18 @@ a {
     font-weight: bolder;
 }
 
-.info--contact:hover {
+.info--contact > div:hover {
+    cursor: pointer;
+}
+
+.info--contact--email:hover {
+    background-color: rgb(218, 130, 30);
+    color: whitesmoke;
+}
+
+.info--contact--linkedin:hover {
     background-color: #4483DA;
     color: whitesmoke;
-    cursor: pointer;
 }
 
 .info--hr {

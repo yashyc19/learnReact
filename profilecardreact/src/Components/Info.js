@@ -8,7 +8,10 @@ export const Info = () => {
                 <div><h1 className='info--name'> Elon Musk </h1></div>
                 <div><div className='info--title'> CEO, Tesla </div></div>
                 <div><a href='https://www.elonmusk.com' className='info--link'>https://www.elonmusk.com</a></div>
-                <div><div className='info--contact'>Contact</div></div>
+                <div className='info--contact'>
+                    <div className='info--contact--email'>Email</div>
+                    <div className='info--contact--linkedin'>LinkedIn</div>
+                </div>
                 <hr className='info--hr'/>
             </div>
         </div>
