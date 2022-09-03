@@ -1,25 +1,22 @@
 import React from 'react'
-import mountainBike from '../assets/images/mountainBike.png'
 
-export const Card = () => {
+export const Card = (props) => {
     return (
-        <div className='cardsection'>
-            <div className='card'>
-                <div className='card--image'>
-                    <img src={mountainBike} alt='mountainBike' />
-                </div>
-                <div className='card--tag'>
-                    SOLD OUT
-                </div>
-                <div className='card--rating'>
-                    <i class="fa fa-solid fa-star" /> 5.0(100) · USA
-                </div>
-                <div className='card--title'>
-                    Group Mountain Biking
-                </div>
-                <div className='card--pricing'>
-                    <b>From $50</b>/person
-                </div>
+        <div className='card'>
+            <div className='card--image'>
+                <img src={props.img} alt='mountainBike' />
+            </div>
+            <div className='card--tag'>
+                {props.tag}
+            </div>
+            <div className='card--rating'>
+                <i class="fa fa-solid fa-star" /> {props.rating} · {props.country}
+            </div>
+            <div className='card--title'>
+                {props.title}
+            </div>
+            <div className='card--pricing'>
+                <b>From ${props.price}</b>/person
             </div>
         </div>
     );
